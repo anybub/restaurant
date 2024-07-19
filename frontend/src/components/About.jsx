@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 const About = () => {
@@ -21,12 +21,17 @@ const About = () => {
               iusto ipsum qui dolore ex, accusantium repellat mollitia
               repellendus.
             </p>
-            <Link to={"/"}>
+            <ScrollLink
+              to="menu"
+              smooth={true}
+              duration={500}
+              offset={-70} // Adjust this value if you have a fixed header
+            >
               Explore Menu{" "}
               <span>
                 <HiOutlineArrowRight />
               </span>
-            </Link>
+            </ScrollLink>
           </div>
           <div className="banner">
             <img src="about.png" alt="about" />
