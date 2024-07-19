@@ -25,7 +25,6 @@ const About = () => {
               to="menu"
               smooth={true}
               duration={500}
-              offset={-70} // Adjust this value if you have a fixed header
             >
               Explore Menu{" "}
               <span>
